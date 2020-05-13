@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Baahubali: The Beginning</title>
+</head>
+
+<body>
+
+<header id="top">
+
+	<div class="container-fluid">
+    
+        <div class="row">
+        
+            <div class="col-lg-4 col-md-12 site-title">
+                <h1>Movie Review</h1>
+                <h2>by Dipendu Ghosh</h2>
+                
+            </div>
+            
+            <div class="col-lg-8 col-md-12 main-menu">
+                
+                <nav class="navbar navbar-light">
+                  <ul class="nav navbar-nav single-page-nav">
+                    <li class="nav-item">
+                      <a class="nav-link external" href="index.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link external" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link external" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link external" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link external" href="http://www.google.com/+templatemo" title="+templatemo page" target="_parent">External</a>
+                    </li> -->
+                  </ul>
+                </nav>
+              
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+            	<hr class="sigma-hr">
+            </div>
+        </div>
+
+    </div>
+    
+</header>
+
+<section id="home">
+
+	<div class="container-fluid">
+
+        <div class="row sigma-home single-page-nav">
+        
+        	<div class="col-md-offset-2 col-lg-offset-3 col-lg-6 col-md-8 col-sm-12 text-center">
+                <h1>Baahubali: The Beginning</h1>
+                <h2>Movie review by Dipendu Ghosh</h2>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+        	<div class="sigma-content col-lg-12 col-md-12 sigma-bg-lightgray text-center">
+            	<p>A baby boy is miraculously found alive in the middle of a river by a few villagers. They raise him as their own. Named Shiva (Prabhas), the boy grows up to be an adventurous commoner until his past comes back to haunt him. Turns out, Shiva is royalty and heir to the Mahishmati kingdom. Son of the noble king Amarendra Baahubali (Prabhas in a dual role) and queen Devasena (Anushka Shetty), he must now fight the evil king Bhallala Deva (Rana Daggubati), who tortured his parents and forcefully seized their kingdom.<br>
+                Touted as one of the most expensive films to be made in India, this highly anticipated part one of the two-part period epic, manages to enthrall you with its sheer scale and grandeur. Painstakingly made, paying acute attention to detail for the minutest of sound and visuals, Rajamouli (Eega, Magadheera) , who spent three years making this ambitious film ensures that the larger-than-life execution matches his grandiose vision. Though this swashbuckling adventure relies heavily on CGI and VFX, it doesn’t lack emotional resonance. It manages to be much more than a blood-soaked romp. The heart of the film lies in the simple thought that good is mightier than evil.<br>
+                <br><br>by Dipendu Ghosh
+            </p>
+            </div>
+        </div>
+        
+	</div>
+    
+</section>
+
+<section id="about">
+
+	<div class="container-fluid">
+    
+    	<div class="row sigma-section-header">
+        	<div class="col-md-offset-2 col-lg-offset-3 col-lg-6 col-md-8 col-sm-12 text-center">
+        		<h1>About Me</h1>
+                <p>Hi Guys! I am Dipendu Ghosh. I am currently a Computer Science Undergrad student at the Govt. College of Engineering and Textile Technology, Serampore.</p>
+            </div>
+        </div>
+        
+	</div>
+    
+</section>
+
+<footer>
+
+	<div class="container-fluid">
+    
+    	<div class="row">
+            <div class="col-md-12">
+            	<hr class="sigma-hr">
+            </div>
+        </div>
+
+        <div class="row">
+        	<div class="sigma-copyright col-lg-8">
+            	<p>Copyright © 2020 Dipendu Ghosh</p>
+            </div>
+            
+            <div class="sigma-copyright col-lg-4 single-page-nav text-right">
+            	<p><a href="#top">Go to top</a></p>
+            </div>
+        </div>
+        
+    </div>   
+
+</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/ekko-lightbox.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <script>
+
+            // Prevent console.log from generating errors in IE for the purposes of the demo
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('.single-page-nav').singlePageNav({
+                offset: $('.single-page-nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+			
+			$(document).ready(function ($) {
+
+				// delegate calls to data-toggle="lightbox"
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						always_show_close: true
+					});
+				});
+
+			});
+			
+        </script>
+
+</body>
+</html>
